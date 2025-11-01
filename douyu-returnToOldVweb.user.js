@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         douyu-returnToOldweb
 // @namespace    ''
-// @match        *://www.douyu.com/beta/*
+// @match        *://www.douyu.com/*
 // @grant        none
 // @version      1.0
 // @author       chunchundeniuma
@@ -9,7 +9,7 @@
 // @run-at       document-start
 // @grant        window.onurlchange
 // @license      MIT
-// @downloadURL  https://raw.githubusercontent.com/chunchundeniuma/douyu-returnToOldVweb/refs/heads/master/douyu-returnToOldweb.user.js
+// @downloadURL  https://raw.githubusercontent.com/chunchundeniuma/douyu-returnToOldweb/refs/heads/master/douyu-returnToOldVweb.user.js
 // @supportURL   https://www.github.com/chunchundeniuma/douyu-returnToOldweb/issues
 // ==/UserScript==
 
@@ -17,7 +17,10 @@
 
 function ReturnToOldWeb() {
     localStorage.setItem("newWebLive", "A");
-    window.location.href = window.location.href.replace("/beta", "");
+    if (window.location.href.match('/beta/')) {
+        window.location.href = window.location.href.replace("/beta", "");
+    }
+    
 }
 
 ReturnToOldWeb();
