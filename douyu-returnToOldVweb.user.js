@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         douyu-returnToOldVweb
+// @name         douyu-returnToOldweb
 // @namespace    ''
 // @match        *://www.douyu.com/beta/*
 // @grant        none
@@ -9,8 +9,8 @@
 // @run-at       document-start
 // @grant        window.onurlchange
 // @license      MIT
-// @downloadURL  https://raw.githubusercontent.com/chunchundeniuma/douyu-returnToOldVweb/refs/heads/master/douyu-returnToOldVweb.user.js
-// @supportURL   https://www.github.com/chunchundeniuma/douyu-returnToOldVweb/issues
+// @downloadURL  https://raw.githubusercontent.com/chunchundeniuma/douyu-returnToOldVweb/refs/heads/master/douyu-returnToOldweb.user.js
+// @supportURL   https://www.github.com/chunchundeniuma/douyu-returnToOldweb/issues
 // ==/UserScript==
 
 "use strict";
